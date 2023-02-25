@@ -47,6 +47,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .left-col {
@@ -55,9 +56,9 @@ main {
     background-color: var(--Light-slate-blue);
     color: var(--white);
 
-    p {
-        padding: .5em 1em;
-        color: var(--White);
+    .desc {
+        padding: 1em 2.5em 2.5em 1em;
+        color: white;
     }
 
 
@@ -69,15 +70,34 @@ main {
 
     h3 {
         color: var(--White);
+        padding-top: 1em;
     }
 
 
     .points {
-        border-radius: 50em;
+        border-radius: 50%;
         background-color: var(--Violet-blue);
         width: 7em;
         height: 7em;
         color: var(--White);
+        margin: auto;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient();
+         
+
+       h1 {
+        font-size: 2.7rem;
+       }
+
+       p {
+        font-size: .8rem;
+        color: var(--Light-lavender);
+
+       }
+
+        
 
         
         
@@ -93,30 +113,89 @@ main {
 
 .right-col {
 
+    h1 {
+        font-size: 1.5rem;
+    }
+
     padding: 2em 1em;
 
     ul {
-        list-style: none;
-        display: block;
-        justify-content: center;
-        align-items: center;
+        list-style: none;     
+        margin-top: .7em;
+
+
+
+        .numbers {
+            color: black;
+        }
+
+        span {
+            color: gray;
+        }
+        
+        
         
         
 
         li {
             display: flex;
             justify-content: space-between;
-            margin: 2em 0;
+            margin: 1em 0;
             height: 3em;
-            width: 90%;
+            width: 100%;
+            padding: .5em;
+            border-radius: .7em;
             
             
 
             .line-items {
                 display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: .5em;
+                
+
                 
             }
+
+            .minor-score {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            
         }
+
+        .reaction-box {
+            background-color: hsla(0, 100%, 67%, .1);
+            color: var(--Light-red);
+            font-weight: 700;
+            
+            
+            
+            
+        }
+
+        .memory-box {
+            background-color: hsla(39, 100%, 56%, .1);
+            font-weight: 700;
+            color: var(--Orangey-yellow);
+        }
+
+        .verbal-box {
+            background-color: hsla(166, 100%, 37%, .1);
+            font-weight: 700;
+            color: var(--Green-teal);
+        }
+
+        .visual-box {
+            background-color: hsla(234, 85%, 45%, .1);
+            font-weight: 700;
+            color: var(--Violet-blue);
+        }
+
+    
 
         
     }
@@ -127,7 +206,7 @@ main {
         border: none;
         height: 3em;
         font-size: 1rem;
-        background-color: var(--Cobalt-blue);
+        background-color: var(--Dark-gray-blue);
         color: white;
         
     }
@@ -135,3 +214,64 @@ main {
 
 
 
+@media only screen and (min-width:800px) {
+
+    main {
+        padding: 2em;
+        min-height: 100vh;
+    }
+
+    .container {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        
+       
+        
+        
+    }
+
+    .left-col {
+        border-radius: 2em 2em;
+        width: 50%;
+
+        h2 {
+            font-size: 1.3rem;
+        }
+
+        h3 {
+            font-size: 1.7rem;
+        }
+
+        .desc {
+            padding: 2em 4em;
+        }
+        
+
+        .points {
+            width: 10em;
+            height: 10em;
+
+            
+            
+            h1 { 
+                padding-top: .8em;
+                font-size: 3rem;
+            }
+            
+        }
+
+    }
+
+    .right-col {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width:850px){
+
+    main {
+        width: 850px;
+        margin: 0 auto;
+    }
+}

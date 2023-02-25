@@ -43,9 +43,9 @@ main {
   background-color: var(--Light-slate-blue);
   color: var(--white);
 }
-.left-col p {
-  padding: 0.5em 1em;
-  color: var(--White);
+.left-col .desc {
+  padding: 1em 2.5em 2.5em 1em;
+  color: white;
 }
 .left-col h2 {
   padding: 1em 0 0.5em 0;
@@ -53,33 +53,83 @@ main {
 }
 .left-col h3 {
   color: var(--White);
+  padding-top: 1em;
 }
 .left-col .points {
-  border-radius: 50em;
+  border-radius: 50%;
   background-color: var(--Violet-blue);
   width: 7em;
   height: 7em;
   color: var(--White);
+  margin: auto;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient();
+}
+.left-col .points h1 {
+  font-size: 2.7rem;
+}
+.left-col .points p {
+  font-size: 0.8rem;
+  color: var(--Light-lavender);
 }
 
 .right-col {
   padding: 2em 1em;
 }
+.right-col h1 {
+  font-size: 1.5rem;
+}
 .right-col ul {
   list-style: none;
-  display: block;
-  justify-content: center;
-  align-items: center;
+  margin-top: 0.7em;
+}
+.right-col ul .numbers {
+  color: black;
+}
+.right-col ul span {
+  color: gray;
 }
 .right-col ul li {
   display: flex;
   justify-content: space-between;
-  margin: 2em 0;
+  margin: 1em 0;
   height: 3em;
-  width: 90%;
+  width: 100%;
+  padding: 0.5em;
+  border-radius: 0.7em;
 }
 .right-col ul li .line-items {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+}
+.right-col ul li .minor-score {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.right-col ul .reaction-box {
+  background-color: hsla(0deg, 100%, 67%, 0.1);
+  color: var(--Light-red);
+  font-weight: 700;
+}
+.right-col ul .memory-box {
+  background-color: hsla(39deg, 100%, 56%, 0.1);
+  font-weight: 700;
+  color: var(--Orangey-yellow);
+}
+.right-col ul .verbal-box {
+  background-color: hsla(166deg, 100%, 37%, 0.1);
+  font-weight: 700;
+  color: var(--Green-teal);
+}
+.right-col ul .visual-box {
+  background-color: hsla(234deg, 85%, 45%, 0.1);
+  font-weight: 700;
+  color: var(--Violet-blue);
 }
 .right-col button {
   width: 100%;
@@ -87,6 +137,48 @@ main {
   border: none;
   height: 3em;
   font-size: 1rem;
-  background-color: var(--Cobalt-blue);
+  background-color: var(--Dark-gray-blue);
   color: white;
+}
+
+@media only screen and (min-width: 800px) {
+  main {
+    padding: 2em;
+    min-height: 100vh;
+  }
+  .container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .left-col {
+    border-radius: 2em 2em;
+    width: 50%;
+  }
+  .left-col h2 {
+    font-size: 1.3rem;
+  }
+  .left-col h3 {
+    font-size: 1.7rem;
+  }
+  .left-col .desc {
+    padding: 2em 4em;
+  }
+  .left-col .points {
+    width: 10em;
+    height: 10em;
+  }
+  .left-col .points h1 {
+    padding-top: 0.8em;
+    font-size: 3rem;
+  }
+  .right-col {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 850px) {
+  main {
+    width: 850px;
+    margin: 0 auto;
+  }
 }/*# sourceMappingURL=main.css.map */
