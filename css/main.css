@@ -112,22 +112,22 @@ main {
   justify-content: center;
 }
 .right-col ul .reaction-box {
-  background-color: hsla(0deg, 100%, 67%, 0.1);
+  background-color: hsla(0, 100%, 67%, 0.1);
   color: var(--Light-red);
   font-weight: 700;
 }
 .right-col ul .memory-box {
-  background-color: hsla(39deg, 100%, 56%, 0.1);
+  background-color: hsla(39, 100%, 56%, 0.1);
   font-weight: 700;
   color: var(--Orangey-yellow);
 }
 .right-col ul .verbal-box {
-  background-color: hsla(166deg, 100%, 37%, 0.1);
+  background-color: hsla(166, 100%, 37%, 0.1);
   font-weight: 700;
   color: var(--Green-teal);
 }
 .right-col ul .visual-box {
-  background-color: hsla(234deg, 85%, 45%, 0.1);
+  background-color: hsla(234, 85%, 45%, 0.1);
   font-weight: 700;
   color: var(--Violet-blue);
 }
@@ -140,6 +140,10 @@ main {
   background-color: var(--Dark-gray-blue);
   color: white;
 }
+.right-col button:hover {
+  background-image: linear-gradient(var(--Light-slate-blue), var(--Light-royal-blue));
+  cursor: pointer;
+}
 
 @media only screen and (min-width: 800px) {
   main {
@@ -150,6 +154,11 @@ main {
     display: flex;
     width: 100%;
     justify-content: center;
+    box-shadow: 14px 15px 25px -2px rgba(0, 0, 0, 0.13);
+    -webkit-box-shadow: 14px 15px 25px -2px rgba(0, 0, 0, 0.13);
+    -moz-box-shadow: 14px 15px 25px -2px rgba(0, 0, 0, 0.13);
+    border-radius: 2em;
+    border-style: none;
   }
   .left-col {
     border-radius: 2em 2em;

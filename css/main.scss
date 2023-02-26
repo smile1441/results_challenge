@@ -211,6 +211,12 @@ main {
         color: white;
         
     }
+
+
+    button:hover {
+        background-image: linear-gradient(var(--Light-slate-blue), var(--Light-royal-blue));
+        cursor: pointer;
+    }
 }
 
 
@@ -226,6 +232,13 @@ main {
         display: flex;
         width: 100%;
         justify-content: center;
+
+        box-shadow: 14px 15px 25px -2px rgba(0,0,0,0.13);
+-webkit-box-shadow: 14px 15px 25px -2px rgba(0,0,0,0.13);
+-moz-box-shadow: 14px 15px 25px -2px rgba(0,0,0,0.13);
+
+border-radius: 2em;
+border-style: none;
         
        
         
